@@ -15,6 +15,7 @@ export default defineConfig({
         '@emotion/react',
         '@emotion/styled',
         '@mui/material',
+        '@mui/icons-material',
         '@emailjs/browser',
         'chart.js',
         'dayjs',
