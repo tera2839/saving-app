@@ -20,6 +20,7 @@ export default defineConfig({
         'dayjs',
         'react',
         'react-dom',
+        'react-router-dom',
         'react-firebase-hooks',
         'react-chartjs-2',
         'react-calendar'
