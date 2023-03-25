@@ -6,7 +6,24 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['react-router-dom']
+      external: [
+        'firebase',
+        '@firebase/app',
+        '@firebase/auth',
+        '@firebase/firestore',
+        '@firebase/storage',
+        '@emotion/react',
+        '@emotion/styled',
+        '@mui/material',
+        '@emailjs/browser',
+        'chart.js',
+        'dayjs',
+        'react',
+        'react-dom',
+        'react-firebase-hooks',
+        'react-chartjs-2',
+        'react-calendar'
+      ]
     }
   }
 })
