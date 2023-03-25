@@ -10,6 +10,9 @@ import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import PersonIcon from '@mui/icons-material/Person';
 import { Link } from 'react-router-dom';
+import carimg from "../car.png"
+import balloonimg from "../balloon.png"
+import moneyimg from "../../../public/other_coin01_01.png"
 
 const Sidebar = ({side}) => {
 
@@ -17,6 +20,9 @@ const Sidebar = ({side}) => {
     <div className={side} >
     <div className="sidebar">
       <div className='sidebar-title'>
+        <img src={carimg} className="side-carimg"/>
+        <img src={balloonimg} className="side-balloonimg" />
+        <img src={moneyimg} className="side-moneyimg" />
         <AttachMoneyIcon className='sidebar-title-icon'/>
         <h2>saving</h2>
       </div>
