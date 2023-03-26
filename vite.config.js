@@ -10,13 +10,15 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        // .jsxファイルを処理する
+        mime: {
+          // '.jsx'ファイルをJavaScriptモジュールとして扱うようにMIMEタイプを設定
+          '.jsx': 'application/javascript'
+        },
         manualChunks(id) {
           if (id.includes('.jsx')) {
             return 'jsx';
           }
         },
-        // .jsxファイルの出力先を設定する
         chunkFileNames: 'assets/jsx/[name]-[hash].js'
       },
       external: [
